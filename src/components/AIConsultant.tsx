@@ -77,9 +77,9 @@ export default function AIConsultant() {
       <button
         id="btn-ai-assistant"
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-[#2D5A27] to-[#1F421B] hover:from-[#35682F] hover:to-[#244C20] text-white p-4 rounded-full shadow-2xl flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95 group border-2 border-[#D4AF37]"
+        className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-[#4A5D23] to-[#323A27] hover:from-[#5B722B] hover:to-[#3D472F] text-white p-4 rounded-full shadow-2xl flex items-center justify-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95 group border-2 border-[#8B7355]"
       >
-        <Sparkles className="w-5 h-5 animate-pulse text-[#D4AF37]" />
+        <Sparkles className="w-5 h-5 animate-pulse text-[#8B7355]" />
         <span className="max-w-0 overflow-hidden group-hover:max-w-36 transition-all duration-500 ease-out font-sans font-medium text-xs tracking-wider uppercase whitespace-nowrap block">
           AI Concierge
         </span>
@@ -104,19 +104,19 @@ export default function AIConsultant() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="relative w-full max-w-md md:max-w-xl h-full bg-[#FDFBF7] shadow-xl border-l border-[#D1A39E]/30 flex flex-col pointer-events-auto z-10"
+              className="relative w-full max-w-md md:max-w-xl h-full bg-[#F8F9F5] shadow-xl border-l border-[#8B7355]/30 flex flex-col pointer-events-auto z-10"
             >
               {/* Gold Header */}
-              <div className="bg-gradient-to-r from-[#2D5A27] to-[#1F421B] p-5 text-white flex items-center justify-between border-b-2 border-[#D4AF37]">
+              <div className="bg-gradient-to-r from-[#4A5D23] to-[#323A27] p-5 text-white flex items-center justify-between border-b-2 border-[#8B7355]">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#FAF5EC]/10 border-2 border-[#D4AF37] flex items-center justify-center">
-                    <Sparkles className="w-5 h-5 text-[#D4AF37]" />
+                  <div className="w-10 h-10 rounded-full bg-[#F2F4EF]/10 border-2 border-[#8B7355] flex items-center justify-center">
+                    <Sparkles className="w-5 h-5 text-[#8B7355]" />
                   </div>
                   <div>
                     <h3 className="font-serif text-lg tracking-wider font-semibold">Tasdiqa's Luxury Concierge</h3>
                     <div className="flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                      <p className="font-sans text-[10px] uppercase tracking-widest text-[#FAF5EC]/70">Bespoke Gifting AI</p>
+                      <p className="font-sans text-[10px] uppercase tracking-widest text-[#F2F4EF]/70">Bespoke Gifting AI</p>
                     </div>
                   </div>
                 </div>
@@ -131,8 +131,8 @@ export default function AIConsultant() {
               {/* Chat Message Window Area */}
               <div ref={scrollRef} className="flex-1 p-5 overflow-y-auto space-y-4">
                 {/* Brand Info Banner */}
-                <div className="bg-[#FAF0EC] border border-[#D1A39E]/20 rounded-xl p-4 flex items-start gap-3">
-                  <HelpCircle className="w-5 h-5 text-[#D1A39E] shrink-0 mt-0.5" />
+                <div className="bg-[#E8EADF] border border-[#8B7355]/20 rounded-xl p-4 flex items-start gap-3">
+                  <HelpCircle className="w-5 h-5 text-[#8B7355] shrink-0 mt-0.5" />
                   <div className="font-sans text-xs text-[#524442] space-y-1">
                     <p className="font-medium text-[#1F1716]">Exclusive Studio Guidelines:</p>
                     <ul className="list-disc list-inside space-y-0.5 text-[#5C4D4A]">
@@ -152,8 +152,8 @@ export default function AIConsultant() {
                     <div
                       className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm font-sans leading-relaxed shadow-sm ${
                         m.role === "user"
-                          ? "bg-[#D1A39E] text-white rounded-tr-none font-medium"
-                          : "bg-white text-[#292323] border border-[#D1A39E]/20 rounded-tl-none whitespace-pre-wrap"
+                          ? "bg-[#8B7355] text-white rounded-tr-none font-medium"
+                          : "bg-white text-[#292323] border border-[#8B7355]/20 rounded-tl-none whitespace-pre-wrap"
                       }`}
                     >
                       {m.text}
@@ -164,10 +164,10 @@ export default function AIConsultant() {
                 {/* Loading indicator bubble */}
                 {isLoading && (
                   <div className="flex justify-start">
-                    <div className="bg-white text-[#292323] border border-[#D1A39E]/25 rounded-2xl rounded-tl-none px-4 py-3 flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 bg-[#D1A39E] rounded-full animate-bounce [animation-delay:-0.3s]" />
-                      <span className="w-1.5 h-1.5 bg-[#D1A39E] rounded-full animate-bounce [animation-delay:-0.15s]" />
-                      <span className="w-1.5 h-1.5 bg-[#D1A39E] rounded-full animate-bounce" />
+                    <div className="bg-white text-[#292323] border border-[#8B7355]/25 rounded-2xl rounded-tl-none px-4 py-3 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 bg-[#8B7355] rounded-full animate-bounce [animation-delay:-0.3s]" />
+                      <span className="w-1.5 h-1.5 bg-[#8B7355] rounded-full animate-bounce [animation-delay:-0.15s]" />
+                      <span className="w-1.5 h-1.5 bg-[#8B7355] rounded-full animate-bounce" />
                     </div>
                   </div>
                 )}
@@ -175,17 +175,17 @@ export default function AIConsultant() {
 
               {/* Prompt Suggestions Area */}
               {messages.length === 1 && (
-                <div className="p-4 bg-[#FAF5EC]/40 border-t border-[#D1A39E]/10">
+                <div className="p-4 bg-[#F2F4EF]/40 border-t border-[#8B7355]/10">
                   <p className="text-[10px] uppercase font-sans font-medium text-[#7A6A53] tracking-widest mb-2.5">Suggested Inquiries</p>
                   <div className="flex flex-wrap gap-2">
                     {CONCIERGE_SUGGESTIONS.map((s, i) => (
                       <button
                         key={i}
                         onClick={() => handleSend(s)}
-                        className="text-left text-xs bg-white text-[#524442] hover:bg-[#FAF0EC] border border-[#D1A39E]/20 hover:border-[#D1A39E] px-3 py-1.5 rounded-lg transition-all shadow-sm cursor-pointer inline-flex items-center gap-1"
+                        className="text-left text-xs bg-white text-[#524442] hover:bg-[#E8EADF] border border-[#8B7355]/20 hover:border-[#8B7355] px-3 py-1.5 rounded-lg transition-all shadow-sm cursor-pointer inline-flex items-center gap-1"
                       >
                         {s}
-                        <ArrowRight className="w-3 h-3 text-[#D4AF37]" />
+                        <ArrowRight className="w-3 h-3 text-[#8B7355]" />
                       </button>
                     ))}
                   </div>
@@ -198,19 +198,19 @@ export default function AIConsultant() {
                   e.preventDefault();
                   handleSend(input);
                 }}
-                className="p-4 border-t border-[#D1A39E]/20 bg-white flex gap-2"
+                className="p-4 border-t border-[#8B7355]/20 bg-white flex gap-2"
               >
                 <input
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Ask about materials, colors, event theme..."
-                  className="flex-1 bg-[#FDFBF7] text-[#1F2937] placeholder-[#A0908C] text-sm font-sans px-4 py-2.5 rounded-xl border border-[#D1A39E]/30 focus:outline-none focus:ring-1 focus:ring-[#2D5A27] focus:border-[#2D5A27] transition"
+                  className="flex-1 bg-[#F8F9F5] text-[#1F2937] placeholder-[#A0908C] text-sm font-sans px-4 py-2.5 rounded-xl border border-[#8B7355]/30 focus:outline-none focus:ring-1 focus:ring-[#4A5D23] focus:border-[#4A5D23] transition"
                 />
                 <button
                   type="submit"
                   disabled={!input.trim() || isLoading}
-                  className="bg-[#2D5A27] text-white p-2.5 rounded-xl flex items-center justify-center hover:bg-[#20421C] active:scale-95 transition disabled:opacity-50 cursor-pointer"
+                  className="bg-[#4A5D23] text-white p-2.5 rounded-xl flex items-center justify-center hover:bg-[#323A27] active:scale-95 transition disabled:opacity-50 cursor-pointer"
                 >
                   <Send className="w-4 h-4" />
                 </button>

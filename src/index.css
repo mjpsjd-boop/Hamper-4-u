@@ -8,20 +8,20 @@ html, body {
 @theme {
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --color-gold-50: #FAF5EC;
-  --color-gold-100: #F3EAD4;
-  --color-gold-200: #E7D5AA;
-  --color-gold-300: #DCBF7F;
-  --color-gold-400: #D0AA55;
-  --color-gold-500: #C5952B;
-  --color-gold-600: #B78224;
-  --color-gold-700: #A06D1C;
-  --color-gold-800: #885714;
-  --color-gold-900: #71410D;
-  --color-primary-sage: #2D5A27; /* botanical green */
-  --color-luxury-beige: #FDFBF7;
-  --color-luxury-blush: #FAF0EC;
-  --color-luxury-rose: #D1A39E;
+  --color-gold-50: #F2F4EF; /* Mossy Light */
+  --color-gold-100: #E5E9DF;
+  --color-gold-200: #CBD4C0;
+  --color-gold-300: #B1BEA1;
+  --color-gold-400: #97A882;
+  --color-gold-500: #7D9263; /* Moss Green */
+  --color-gold-600: #64754F;
+  --color-gold-700: #4B583B;
+  --color-gold-800: #323A27;
+  --color-gold-900: #191D13;
+  --color-primary-sage: #4A5D23; /* Mossy Hollow Green */
+  --color-luxury-beige: #F8F9F5; /* Soft Earth */
+  --color-luxury-blush: #E8EADF; /* Mossy Blush */
+  --color-luxury-rose: #8B7355; /* Earthy Brown */
 }
 
 /* Custom scrollbar */
@@ -29,14 +29,14 @@ html, body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FDFBF7;
+  background: #F8F9F5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D1A39E;
+  background: #8B7355;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C4918B;
+  background: #7A654A;
 }
 
 /* Animation utilities */
