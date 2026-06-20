@@ -1,0 +1,6 @@
+{
+  "name": "HAMPERS_4_YOU",
+  "description": "Luxury Indian gifting hampers, custom ring platters, handcrafted glass or wooden framed Nikah certificates, and baby announcements. Crafted with love by Tasdiqa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

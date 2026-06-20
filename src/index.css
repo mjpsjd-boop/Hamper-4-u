@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --color-gold-50: #FAF5EC;
+  --color-gold-100: #F3EAD4;
+  --color-gold-200: #E7D5AA;
+  --color-gold-300: #DCBF7F;
+  --color-gold-400: #D0AA55;
+  --color-gold-500: #C5952B;
+  --color-gold-600: #B78224;
+  --color-gold-700: #A06D1C;
+  --color-gold-800: #885714;
+  --color-gold-900: #71410D;
+  --color-primary-sage: #2D5A27; /* botanical green */
+  --color-luxury-beige: #FDFBF7;
+  --color-luxury-blush: #FAF0EC;
+  --color-luxury-rose: #D1A39E;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1A39E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4918B;
+}
+
+/* Animation utilities */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Luxury button flare */
+.btn-gold-glint {
+  position: relative;
+  overflow: hidden;
+}
+.btn-gold-glint::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+  opacity: 0;
+}
+.btn-gold-glint:hover::after {
+  left: 125%;
+  opacity: 1;
+}
+
+/* Hide scrollbars for horizontal carousel channels */
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+}
+.scrollbar-none {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
